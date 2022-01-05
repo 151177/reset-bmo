@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Help Reset BMO</title>
+  <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="game-container">
+      <div id="game-background">
+        <header id="header">Help Reset BMO</header>
+        <div id="instructions">BMO is broken. Guess the reset number, so BMO can dance again. It could be any number
+          between 1 and 100.</div>
+
+        <div id="aside">
+          <div id="guess-content">
+            <div id="previous-guesses-header">Previous Guesses</div>
+            <ul id="previous-guesses">
+              <li class="guess"></li>
+            </ul>
+          </div>
+          <div id="lives-container">
+            <div id="lives-header">Lives</div>
+            <div id="lives">
+              <img class="mushroom" src="img/mushroom.png">
+              <img class="mushroom" src="img/mushroom.png">
+              <img class="mushroom" src="img/mushroom.png">
+              <img class="mushroom" src="img/mushroom.png">
+              <img class="mushroom" src="img/mushroom.png">
+            </div>
+          </div>
+        </div>
+        <div id="display-container">
+          <form id="user-input">
+            <div id="input">
+              <div id="on-win">
+                <input type="text" id="guess-value" placeholder="#" autocomplete="off">
+              </div>
+              <div id="win-message">You did it!</div>
+              <div id="no-lives">All your lives are gone, play again!</div>
+              <div id="hint-header">Hint</div>
+              <div id="hint"></div>
+            </div>
+            <div id="buttons">
+              <button type="button" id="submit">Submit</button>
+              <button type="button" id="play-again">Play Again</button>
+            </div>
+          </form>
+          <div id="nan">Please enter a number from 1 to 100.</div>
+          <div id="ty">BMO thanks you and dances.</div>
+        </div>
+
+      </div>
+      <img id="bmo-sad" src="img/bmo-sad.png">
+      <img id="bmo-dance" src="img/bmo.gif">
+    </div>
+  </div>
+
+  <script src='functionality.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+body {
+    background-image: url("img/at-background.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+    min-height: 100vh;
+}
+
+#container {
+    display: flex;
+    justify-content: center;  
+}
+
+#game-container {
+    border-radius: 8%;
+    margin: 80px 16px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #5BA291;
+    height: 632px;
+    padding: 32px;
+    width: fit-content;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.301);
+    border: 2px solid black;
+}
+
+#game-background {
+    border-radius: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #B9F7C5;
+    padding: 8px 24px 0px 24px;
+    width: fit-content;
+    height: 395px;
+    border: 2px solid black;
+}
+
+#header {
+    font-family: 'VT323', monospace;
+    font-size: 61px;
+}
+
+#aside {
+    display: flex;
+    width: 340px;
+    justify-content: space-between;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+#instructions {
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    padding-top: 16px;
+    width: 340px;
+}
+
+#lives-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 32px 0px
+}
+
+#lives-header {
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    line-height: 0px;
+    padding-bottom: 8px;
+}
+
+#lives {
+    display: flex;
+    flex-direction: row;
+}
+
+.mushroom {
+    width: 24px;
+    height: 24px;
+    margin: 8px 2px 0px 2px;
+}
+
+.mushroom:last-child {
+    margin-right: 0px;
+}
+
+#guess-hint {
+    width: 340px;
+}
+
+#guesses-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#guess-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#previous-guesses-header {
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    line-height: 0px;
+    padding-bottom: 4px;
+    margin-top: 32px;
+}
+
+#previous-guesses {
+    list-style: none;
+    padding: 0px;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    line-height: 0px;
+    margin-bottom: 32px;
+}
+
+#guess {
+    text-align: left;
+}
+
+#hint-header {
+    display: none;
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    line-height: 0px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+#hint {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    line-height: 0px;
+    margin-bottom: 32px;
+}
+
+#display-container {
+   display: flex;
+   flex-direction: column; 
+}
+
+#user-input {
+    width: 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+#input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#on-win {
+    display: block;
+}
+
+#guess-value {
+    padding: 4px;
+    height: 50px;
+    width: 50px;
+    color: black;
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    text-align: center;;
+}
+
+#no-lives {
+    display: none;
+    color: black;
+    font-family: 'VT323', monospace;
+    font-size: 16px;
+    height: 60px;
+    width: 90px;
+    margin-bottom: 32px;
+}
+
+#win-message {
+    display: none;
+    color: black;
+    font-family: 'VT323', monospace;
+    font-size: 32px;
+    height: 60px;
+    width: 90px;
+    margin-bottom: 32px;
+}
+
+#submit {
+    margin-right: 8px;
+    padding: 4px 20px 4px 20px;
+    height: fit-content;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+}
+
+#play-again {
+    padding: 4px 20px 4px 20px;
+    height: fit-content;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+}
+
+#nan {
+    display: none;
+    width: 100%;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    line-height: 0px;
+    margin-top: 24px;
+}
+
+#ty {
+    display: none;
+    width: 100%;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    line-height: 0px;
+    margin-top: 0px;
+}
+
+#bmo-sad {
+    display: flex;
+    align-self: center;
+    margin-top: 48px;
+    width: 130px;
+}
+
+#bmo-dance {
+    display: flex;
+    align-self: center;
+    margin-top: 48px;
+    width: 200px;
+    display: none;
+}
